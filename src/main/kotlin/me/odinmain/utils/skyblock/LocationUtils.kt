@@ -23,14 +23,14 @@ object LocationUtils {
     @SubscribeEvent
     fun onDisconnect(event: FMLNetworkEvent.ClientDisconnectionFromServerEvent) {
         currentArea = Island.Unknown
-        isInSkyblock = false
-        isOnHypixel = false
+        isInSkyblock = true
+        isOnHypixel = true
     }
 
     @SubscribeEvent
     fun onWorldChange(event: WorldEvent.Unload) {
         currentArea = Island.Unknown
-        isInSkyblock = false
+        isInSkyblock = true
     }
 
     /**
