@@ -64,7 +64,7 @@ object LocationUtils {
 
             is S3BPacketScoreboardObjective ->
                 if (!isInSkyblock)
-                    isInSkyblock = isOnHypixel && event.packet.func_149339_c() == "SBScoreboard"
+                    isInSkyblock = true
         }
     }
 }
